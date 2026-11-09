@@ -1,283 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pharadee Kasemsin - KOL & TikTok Affiliate Portfolio</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Plus Jakarta Sans', 'Prompt', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            bg: '#0A0A0C',
-                            card: '#121216',
-                            border: '#22222A',
-                            accent: '#3B82F6',
-                            accentDark: '#1D4ED8',
-                            muted: '#94A3B8',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        body {
-            background-color: #0A0A0C;
-            color: #F8FAFC;
-        }
-        .glass-card {
-            background: rgba(18, 18, 22, 0.7);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-        }
-        .glow-effect {
-            box-shadow: 0 0 40px -10px rgba(59, 130, 246, 0.3);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharadee K. - Digital Marketing & TikTok Affiliate Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Prompt:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-main: #ffffff;
+      --bg-card: #f8fafc;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --border-color: #e2e8f0;
+      --badge-bg: #f1f5f9;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-main: #090d16;
+        --bg-card: #121827;
+        --text-main: #f8fafc;
+        --text-muted: #94a3b8;
+        --border-color: #1e293b;
+        --badge-bg: #1e293b;
+      }
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', 'Prompt', sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .card-theme {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+    }
+    .text-muted-theme {
+      color: var(--text-muted);
+    }
+    .badge-theme {
+      background-color: var(--badge-bg);
+      border: 1px solid var(--border-color);
+    }
+  </style>
 </head>
-<body class="font-sans antialiased selection:bg-blue-600 selection:text-white">
+<body class="min-h-screen">
+  <!-- Header Nav -->
+  <header class="sticky top-0 z-50 card-theme border-b px-6 py-4">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <span class="text-xl font-extrabold tracking-tight">PHARADEE <span class="text-blue-500">.K</span></span>
+        <span class="badge-theme text-xs px-2.5 py-1 rounded-md font-medium text-muted-theme">Verified Portfolio</span>
+      </div>
+      <nav class="hidden md:flex space-x-8 text-sm font-semibold text-muted-theme">
+        <a href="#metrics" class="hover:text-blue-500 transition">Key Metrics</a>
+        <a href="#viral" class="hover:text-blue-500 transition">Viral Showcase</a>
+        <a href="#cases" class="hover:text-blue-500 transition">Work Experience</a>
+        <a href="#tools" class="hover:text-blue-500 transition">Tools & Tech</a>
+      </nav>
+      <a href="mailto:pharadee.kas@gmail.com" class="bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 px-4 py-2 rounded-lg text-sm font-semibold transition hover:opacity-90">Contact Me</a>
+    </div>
+  </header>
 
-    <!-- Header Navigation -->
-    <header class="fixed top-0 left-0 right-0 z-50 glass-card border-b border-white/10">
-        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-            <span class="text-lg font-bold tracking-wider text-white">PHARADEE<span class="text-blue-500">.K</span></span>
-            <nav class="hidden md:flex space-x-8 text-sm text-slate-300 font-medium">
-                <a href="#stats" class="hover:text-blue-400 transition-colors">Key Metrics</a>
-                <a href="#showcase" class="hover:text-blue-400 transition-colors">Viral Showcase</a>
-                <a href="#case-studies" class="hover:text-blue-400 transition-colors">Case Studies</a>
-                <a href="#skills" class="hover:text-blue-400 transition-colors">Tools & Skills</a>
-            </nav>
-            <a href="mailto:pharadee.kas@gmail.com" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold px-4 py-2 rounded-full transition-all">
-                Contact Me
-            </a>
+  <!-- Hero Section -->
+  <section class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-7 space-y-6">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full badge-theme text-xs font-semibold">
+          <span>TikTok Affiliate & KOL Specialist</span>
         </div>
-    </header>
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
+          Scaling E-Commerce GMV Through Data-Driven KOL Campaigns
+        </h1>
+        <p class="text-muted-theme text-base md:text-lg leading-relaxed">
+          Proven track record scaling TikTok Shop revenues up to <strong>฿4.77M+ THB GMV</strong> (+335.92% Growth), managing end-to-end creator recruitment pipelines, and optimizing high-converting target plans.
+        </p>
+        <div class="flex flex-wrap gap-4 pt-4">
+          <a href="#metrics" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-3 rounded-xl transition text-sm">View Verified Data</a>
+          <a href="#viral" class="card-theme font-semibold px-6 py-3 rounded-xl transition text-sm">Viral Content Showcase</a>
+        </div>
+      </div>
+      
+      <!-- Performance Highlight Card -->
+      <div class="md:col-span-5 card-theme p-6 rounded-2xl shadow-sm">
+        <h3 class="text-xs uppercase tracking-widest text-muted-theme font-bold mb-6">Performance Overview</h3>
+        <div class="space-y-6">
+          <div class="border-b border-slate-200 dark:border-slate-800 pb-4">
+            <div class="text-3xl font-extrabold text-blue-500">฿4,776,407 THB</div>
+            <div class="text-xs text-muted-theme mt-1">Total TikTok Affiliate GMV</div>
+          </div>
+          <div class="border-b border-slate-200 dark:border-slate-800 pb-4">
+            <div class="text-3xl font-extrabold">10,814 Items</div>
+            <div class="text-xs text-muted-theme mt-1">Products Sold via Creators</div>
+          </div>
+          <div>
+            <div class="text-3xl font-extrabold">50+ KOLs/Mo</div>
+            <div class="text-xs text-muted-theme mt-1">Active High-Converting Creators Onboarded</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <main class="pt-24 pb-20">
+  <!-- KEY METRICS & PROOF -->
+  <section id="metrics" class="max-w-6xl mx-auto px-6 py-12">
+    <div class="mb-8">
+      <h2 class="text-xs uppercase tracking-widest text-blue-500 font-bold mb-1">Proven Results</h2>
+      <h3 class="text-2xl font-bold">TikTok Shop Seller Center Analytics</h3>
+    </div>
+    
+    <div class="card-theme p-6 md:p-8 rounded-2xl flex flex-col md:flex-row gap-8 items-center">
+      <div class="md:w-1/2 w-full rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-950 p-2">
+        <img src="https://i.postimg.cc/y8mRt1v0/IMG-2517.jpg" alt="TikTok Shop Seller Center Dashboard 4.77M GMV" class="w-full h-auto rounded-lg">
+        <div class="text-center text-[11px] text-slate-400 py-2 font-mono">Actual Seller Center Performance Dashboard</div>
+      </div>
+      
+      <div class="md:w-1/2 space-y-6">
+        <div>
+          <span class="bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 text-xs px-3 py-1 rounded font-semibold">+335.92% Growth</span>
+          <h4 class="text-3xl font-extrabold mt-3">฿4,776,407.03 THB</h4>
+          <p class="text-sm text-muted-theme mt-1">Generated total GMV through affiliate creator network optimization.</p>
+        </div>
         
-        <!-- Hero Section -->
-        <section class="max-w-6xl mx-auto px-6 py-16 md:py-24">
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold uppercase tracking-wider mb-6">
-                <i data-lucide="sparkles" class="w-4 h-4"></i>
-                Digital Marketing & TikTok Affiliate Specialist
-            </div>
-            
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight text-white mb-6">
-                Scaling E-Commerce Revenue via <br class="hidden md:block"/>
-                <span class="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">Data-Driven KOL & Affiliate Marketing</span>
-            </h1>
-            
-            <p class="text-slate-400 text-base md:text-lg max-w-3xl leading-relaxed mb-10">
-                Specialized in TikTok Affiliate strategy, high-ROI creator outreach, viral content optimization, and sample tracking with a proven track record of generating 4.77M+ THB GMV and 133K+ viral video likes.
-            </p>
+        <div class="grid grid-cols-2 gap-4 pt-2">
+          <div class="card-theme p-4 rounded-xl">
+            <div class="text-xl font-bold">10,814</div>
+            <div class="text-xs text-muted-theme mt-1">Items Sold (+271.62%)</div>
+          </div>
+          <div class="card-theme p-4 rounded-xl">
+            <div class="text-xl font-bold">2,588</div>
+            <div class="text-xs text-muted-theme mt-1">Affiliate Videos Posted</div>
+          </div>
+          <div class="card-theme p-4 rounded-xl">
+            <div class="text-xl font-bold">1,863</div>
+            <div class="text-xs text-muted-theme mt-1">Live Stream Sessions</div>
+          </div>
+          <div class="card-theme p-4 rounded-xl">
+            <div class="text-xl font-bold">57 / Day</div>
+            <div class="text-xs text-muted-theme mt-1">Avg Active Selling Creators</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <div class="flex flex-wrap gap-4 text-sm text-slate-300">
-                <div class="flex items-center gap-2 bg-slate-900/80 px-4 py-2.5 rounded-xl border border-slate-800">
-                    <i data-lucide="mail" class="w-4 h-4 text-blue-400"></i>
-                    <span>pharadee.kas@gmail.com</span>
-                </div>
-                <div class="flex items-center gap-2 bg-slate-900/80 px-4 py-2.5 rounded-xl border border-slate-800">
-                    <i data-lucide="phone" class="w-4 h-4 text-blue-400"></i>
-                    <span>+66 83 601 6993</span>
-                </div>
-                <div class="flex items-center gap-2 bg-slate-900/80 px-4 py-2.5 rounded-xl border border-slate-800">
-                    <i data-lucide="map-pin" class="w-4 h-4 text-blue-400"></i>
-                    <span>Nonthaburi, Thailand</span>
-                </div>
-            </div>
-        </section>
+  <!-- VIRAL CREATOR SHOWCASE -->
+  <section id="viral" class="max-w-6xl mx-auto px-6 py-12">
+    <div class="mb-8">
+      <h2 class="text-xs uppercase tracking-widest text-blue-500 font-bold mb-1">Campaign Performance</h2>
+      <h3 class="text-2xl font-bold">Viral Creator Content Showcase</h3>
+    </div>
 
-        <!-- Stats Section -->
-        <section id="stats" class="max-w-6xl mx-auto px-6 py-12">
-            <h2 class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-6">Key Performance Metrics</h2>
-            
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-8">
-                <!-- Stat 1 -->
-                <div class="glass-card p-6 rounded-2xl glow-effect relative overflow-hidden">
-                    <div class="text-3xl md:text-4xl font-extrabold text-white mb-1">฿4.77M+</div>
-                    <div class="text-xs md:text-sm font-semibold text-emerald-400 mb-2 flex items-center gap-1">
-                        <i data-lucide="trending-up" class="w-3.5 h-3.5"></i> +335.92% Growth
-                    </div>
-                    <p class="text-xs text-slate-400">Total TikTok Affiliate GMV Generated</p>
-                </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Card 1: Zootopia Powerbank -->
+      <div class="card-theme rounded-2xl overflow-hidden">
+        <div class="p-4 border-b border-slate-200 dark:border-slate-800 flex justify-between items-center">
+          <span class="text-xs font-bold text-pink-600 dark:text-pink-400 bg-pink-100 dark:bg-pink-950 px-2.5 py-0.5 rounded">133.8K Likes / 2.3M Views</span>
+          <span class="text-xs text-muted-theme">Powerbank Showcase</span>
+        </div>
+        
+        <div class="grid grid-cols-2 gap-2 p-3 bg-slate-900">
+          <div class="aspect-[9/16] rounded-lg overflow-hidden relative">
+            <img src="https://i.postimg.cc/50R0WjS0/IMG-2515.jpg" alt="Armmy Gadget Creator Video" class="w-full h-full object-cover">
+          </div>
+          <div class="aspect-[9/16] rounded-lg overflow-hidden relative">
+            <img src="https://i.postimg.cc/T341p0M6/IMG-2512.jpg" alt="Khun wat Creator Video" class="w-full h-full object-cover">
+          </div>
+        </div>
 
-                <!-- Stat 2 -->
-                <div class="glass-card p-6 rounded-2xl">
-                    <div class="text-3xl md:text-4xl font-extrabold text-white mb-1">133.8K+</div>
-                    <div class="text-xs font-semibold text-rose-400 mb-2 flex items-center gap-1">
-                        <i data-lucide="heart" class="w-3.5 h-3.5"></i> Max Likes / Video
-                    </div>
-                    <p class="text-xs text-slate-400">Top Viral Creator Engagement</p>
-                </div>
+        <div class="p-5 space-y-3">
+          <h4 class="font-bold text-base">Zootopia Power Bank</h4>
+          <p class="text-xs text-muted-theme">Creators: Armmy Gadget / Khun wat</p>
+          <p class="text-xs text-muted-theme leading-relaxed">Leveraged character IP appeal and unboxing hooks to create massive viral reach and fast stock clearance.</p>
+        </div>
+      </div>
 
-                <!-- Stat 3 -->
-                <div class="glass-card p-6 rounded-2xl">
-                    <div class="text-3xl md:text-4xl font-extrabold text-white mb-1">10,800+</div>
-                    <div class="text-xs md:text-sm font-semibold text-emerald-400 mb-2 flex items-center gap-1">
-                        <i data-lucide="trending-up" class="w-3.5 h-3.5"></i> +271.62% Units
-                    </div>
-                    <p class="text-xs text-slate-400">Product Volume Sold via Affiliate Links</p>
-                </div>
+      <!-- Card 2: Deli Power Sockets -->
+      <div class="card-theme rounded-2xl overflow-hidden">
+        <div class="p-4 border-b border-slate-200 dark:border-slate-800 flex justify-between items-center">
+          <span class="text-xs font-bold text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-950 px-2.5 py-0.5 rounded">31.2K Likes</span>
+          <span class="text-xs text-muted-theme">Deli Power Sockets</span>
+        </div>
+        
+        <div class="grid grid-cols-2 gap-2 p-3 bg-slate-900">
+          <div class="aspect-[9/16] rounded-lg overflow-hidden relative">
+            <img src="https://i.postimg.cc/zv13LXRw/IMG-2508.jpg" alt="Mae Pu Shop Creator Video" class="w-full h-full object-cover">
+          </div>
+          <div class="aspect-[9/16] rounded-lg overflow-hidden relative">
+            <img src="https://i.postimg.cc/jLrCWdJ4/IMG-2506.jpg" alt="Kamonnnnn Creator Video" class="w-full h-full object-cover">
+          </div>
+        </div>
 
-                <!-- Stat 4 -->
-                <div class="glass-card p-6 rounded-2xl">
-                    <div class="text-3xl md:text-4xl font-extrabold text-white mb-1">50+</div>
-                    <div class="text-xs font-semibold text-purple-400 mb-2">Creators / Month</div>
-                    <p class="text-xs text-slate-400">Active High-Converting KOLs Onboarded</p>
-                </div>
-            </div>
+        <div class="p-5 space-y-3">
+          <h4 class="font-bold text-base">Deli Extension Lead & Adapter</h4>
+          <p class="text-xs text-muted-theme">Creators: Mae Pu Shop / Kamonnnnn</p>
+          <p class="text-xs text-muted-theme leading-relaxed">Focused on practical problem-solving visuals combined with aesthetic desk setups to drive high saves and sales conversions.</p>
+        </div>
+      </div>
 
-            <!-- Dashboard Evidence Proof Image -->
-            <div class="glass-card p-4 md:p-6 rounded-3xl border border-blue-500/30 overflow-hidden">
-                <div class="flex items-center justify-between mb-4">
-                    <div class="flex items-center gap-2">
-                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                        <h3 class="text-sm font-bold text-white uppercase tracking-wider">Verified TikTok Shop Seller Center Dashboard</h3>
-                    </div>
-                    <span class="text-xs font-semibold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full">฿4,776,407.03 Verified</span>
-                </div>
-                <div class="rounded-2xl overflow-hidden border border-slate-800 bg-slate-950">
-                    <img src="image.png" alt="TikTok Shop Seller Center Verified 4.77M GMV Dashboard" class="w-full h-auto object-cover max-h-[450px] mx-auto opacity-95 hover:opacity-100 transition-opacity" onerror="this.src='https://placehold.co/1200x500/0f172a/38bdf8?text=TikTok+Shop+Dashboard+4.77M+GMV'"/>
-                </div>
-                <p class="text-[11px] text-slate-500 mt-3 text-center">Verified campaign performance metrics from TikTok Shop Seller Center (Dec 2025 – Feb 2026)</p>
-            </div>
-        </section>
+      <!-- Card 3: Deli Safe -->
+      <div class="card-theme rounded-2xl overflow-hidden">
+        <div class="p-4 border-b border-slate-200 dark:border-slate-800 flex justify-between items-center">
+          <span class="text-xs font-bold text-purple-600 dark:text-purple-400 bg-purple-100 dark:bg-purple-950 px-2.5 py-0.5 rounded">High-Ticket SKU</span>
+          <span class="text-xs text-muted-theme">Deli Safe</span>
+        </div>
+        
+        <div class="grid grid-cols-2 gap-2 p-3 bg-slate-900">
+          <div class="aspect-[9/16] rounded-lg overflow-hidden relative">
+            <img src="https://i.postimg.cc/tYH71CV3/IMG-2510.jpg" alt="Mind Mint Creator Video" class="w-full h-full object-cover">
+          </div>
+          <div class="aspect-[9/16] rounded-lg overflow-hidden relative">
+            <img src="https://i.postimg.cc/85z1DkQJ/IMG-2511.jpg" alt="P Ewit Creator Video" class="w-full h-full object-cover">
+          </div>
+        </div>
 
-        <!-- Viral Content Showcase Section -->
-        <section id="showcase" class="max-w-6xl mx-auto px-6 py-16">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
-                <div>
-                    <h2 class="text-xs font-bold uppercase tracking-widest text-rose-400 mb-2">High-Engagement Campaigns</h2>
-                    <h3 class="text-3xl font-extrabold text-white">Viral Creator Content Showcase</h3>
-                </div>
-                <p class="text-slate-400 text-sm mt-2 md:mt-0">Real reference screenshots of managed creator content with massive engagement</p>
-            </div>
+        <div class="p-5 space-y-3">
+          <h4 class="font-bold text-base">Deli Lockworth Minimalist Safe</h4>
+          <p class="text-xs text-muted-theme">Creators: P Ewit / Mind Mint</p>
+          <p class="text-xs text-muted-theme leading-relaxed">Targeted home decor enthusiasts to showcase fingerprint security features, successfully converting high-ticket customers.</p>
+        </div>
+      </div>
 
-            <div class="grid md:grid-cols-3 gap-6">
-                <!-- Showcase Card 1 -->
-                <div class="glass-card rounded-2xl p-6 border border-slate-800 flex flex-col justify-between overflow-hidden group">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-xs font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/20 px-3 py-1 rounded-full">133.8K Likes</span>
-                            <span class="text-xs text-slate-400">Powerbank Zootopia</span>
-                        </div>
-                        
-                        <!-- Reference Images Aspect Frame -->
-                        <div class="grid grid-cols-2 gap-2 mb-4">
-                            <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-900 h-48">
-                                <img src="image_2.png" alt="อาร์มมี่ GadGet 133.8K Likes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://placehold.co/300x500/1e1b4b/e0e7ff?text=133.8K+Likes'"/>
-                            </div>
-                            <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-900 h-48">
-                                <img src="image_5.png" alt="Khun wat 23.1K Likes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://placehold.co/300x500/1e1b4b/e0e7ff?text=23.1K+Likes'"/>
-                            </div>
-                        </div>
+    </div>
+  </section>
 
-                        <h4 class="text-lg font-bold text-white mb-1">Zootopia Power Bank (Acmic)</h4>
-                        <p class="text-xs text-slate-400 mb-2">Creators: <strong>อาร์มมี่ GadGet / Khun wat</strong></p>
-                        <p class="text-xs text-slate-300 leading-relaxed mb-4">Paired popular IP character with unboxing hook, driving viral distribution and rapid stock clearance.</p>
-                    </div>
-                    <div class="pt-4 border-t border-slate-800/80 grid grid-cols-3 gap-2 text-center">
-                        <div class="bg-slate-900/60 p-2 rounded-xl">
-                            <div class="text-sm font-bold text-white">133.8K</div>
-                            <div class="text-[10px] text-slate-400">Likes</div>
-                        </div>
-                        <div class="bg-slate-900/60 p-2 rounded-xl">
-                            <div class="text-sm font-bold text-white">16.1K</div>
-                            <div class="text-[10px] text-slate-400">Shares</div>
-                        </div>
-                        <div class="bg-slate-900/60 p-2 rounded-xl">
-                            <div class="text-sm font-bold text-white">23.1K</div>
-                            <div class="text-[10px] text-slate-400">Likes (Alt)</div>
-                        </div>
-                    </div>
-                </div>
+  <!-- WORK EXPERIENCE -->
+  <section id="cases" class="max-w-6xl mx-auto px-6 py-12">
+    <div class="mb-8">
+      <h2 class="text-xs uppercase tracking-widest text-blue-500 font-bold mb-1">Experience</h2>
+      <h3 class="text-2xl font-bold">Professional Career History</h3>
+    </div>
 
-                <!-- Showcase Card 2 -->
-                <div class="glass-card rounded-2xl p-6 border border-slate-800 flex flex-col justify-between overflow-hidden group">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 px-3 py-1 rounded-full">31.2K Likes</span>
-                            <span class="text-xs text-slate-400">Deli Power Sockets</span>
-                        </div>
+    <div class="space-y-6">
+      <div class="card-theme p-6 rounded-2xl">
+        <div class="flex justify-between items-start flex-wrap gap-2 mb-3">
+          <div>
+            <h4 class="font-bold text-lg">Dissing (Thailand) Co., Ltd.</h4>
+            <div class="text-xs text-muted-theme">KOL Specialist | Dec 2025 – Feb 2026</div>
+          </div>
+          <span class="badge-theme text-xs px-3 py-1 rounded-full">1.82M GMV Month 1</span>
+        </div>
+        <ul class="text-xs text-muted-theme space-y-2 list-disc list-inside leading-relaxed">
+          <li>Scaled affiliate channel to 1.82M THB GMV within the first 30 days of campaign launch.</li>
+          <li>Onboarded and managed over 50 active TikTok Affiliate KOLs per month.</li>
+          <li>Structured Target Plan commission agreements balancing margin protection and creator incentive.</li>
+        </ul>
+      </div>
 
-                        <!-- Reference Images Aspect Frame -->
-                        <div class="grid grid-cols-2 gap-2 mb-4">
-                            <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-900 h-48">
-                                <img src="image_6.png" alt="แม่ปู้รู้เรื่องช้อป 31.2K Likes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://placehold.co/300x500/0f172a/38bdf8?text=31.2K+Likes'"/>
-                            </div>
-                            <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-900 h-48">
-                                <img src="image_7.png" alt="Kamonnnnn 12.8K Likes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://placehold.co/300x500/0f172a/38bdf8?text=12.8K+Likes'"/>
-                            </div>
-                        </div>
+      <div class="card-theme p-6 rounded-2xl">
+        <div class="flex justify-between items-start flex-wrap gap-2 mb-3">
+          <div>
+            <h4 class="font-bold text-lg">Deli E-Commerce (Thailand) Co., Ltd.</h4>
+            <div class="text-xs text-muted-theme">TikTok Affiliate & Store Operations Specialist (Solo Owner) | Mar 2026 – May 2026</div>
+          </div>
+          <span class="badge-theme text-xs px-3 py-1 rounded-full">Solo Operator</span>
+        </div>
+        <ul class="text-xs text-muted-theme space-y-2 list-disc list-inside leading-relaxed">
+          <li>Managed end-to-end TikTok Shop affiliate operations targeting up to 8M+ THB GMV.</li>
+          <li>Executed creator sourcing via FastMoss, sending out 6-10 targeted product samples daily.</li>
+          <li>Utilized JST-ERP for stock allocation, sample verification, and order processing.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-                        <h4 class="text-lg font-bold text-white mb-1">Deli Extension Lead & Adapter</h4>
-                        <p class="text-xs text-slate-400 mb-2">Creators: <strong>แม่ปู้รู้เรื่องช้อป / Kamonnnnn</strong></p>
-                        <p class="text-xs text-slate-300 leading-relaxed mb-4">Pain-point resolution combined with pastel workstation aesthetics drove massive saves and affiliate clicks.</p>
-                    </div>
-                    <div class="pt-4 border-t border-slate-800/80 grid grid-cols-3 gap-2 text-center">
-                        <div class="bg-slate-900/60 p-2 rounded-xl">
-                            <div class="text-sm font-bold text-white">31.2K</div>
-                            <div class="text-[10px] text-slate-400">Likes</div>
-                        </div>
-                        <div class="bg-slate-900/60 p-2 rounded-xl">
-                            <div class="text-sm font-bold text-white">4.2K</div>
-                            <div class="text-[10px] text-slate-400">Saves</div>
-                        </div>
-                        <div class="bg-slate-900/60 p-2 rounded-xl">
-                            <div class="text-sm font-bold text-white">3.9K</div>
-                            <div class="text-[10px] text-slate-400">Shares</div>
-                        </div>
-                    </div>
-                </div>
+  <!-- TOOLS & TECH -->
+  <section id="tools" class="max-w-6xl mx-auto px-6 py-12 mb-16">
+    <div class="card-theme p-8 rounded-2xl text-center">
+      <h3 class="text-lg font-bold mb-6">Tools & Technical Stack</h3>
+      <div class="flex flex-wrap justify-center gap-3">
+        <span class="px-4 py-2 badge-theme rounded-xl text-xs font-semibold">TikTok Seller Center</span>
+        <span class="px-4 py-2 badge-theme rounded-xl text-xs font-semibold">FastMoss (FastData)</span>
+        <span class="px-4 py-2 badge-theme rounded-xl text-xs font-semibold">JST-ERP System</span>
+        <span class="px-4 py-2 badge-theme rounded-xl text-xs font-semibold">Notion & Google Sheets</span>
+        <span class="px-4 py-2 badge-theme rounded-xl text-xs font-semibold">Open & Target Plan Campaign Planning</span>
+      </div>
+    </div>
+  </section>
 
-                <!-- Showcase Card 3 -->
-                <div class="glass-card rounded-2xl p-6 border border-slate-800 flex flex-col justify-between overflow-hidden group">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-xs font-semibold bg-purple-500/10 text-purple-400 border border-purple-500/20 px-3 py-1 rounded-full">High-Ticket SKU</span>
-                            <span class="text-xs text-slate-400">Deli Digital Safe</span>
-                        </div>
-
-                        <!-- Reference Images Aspect Frame -->
-                        <div class="grid grid-cols-2 gap-2 mb-4">
-                            <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-900 h-48">
-                                <img src="image_3.png" alt="พี่เอกวิทย์ Deli Safe" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://placehold.co/300x500/31104b/c084fc?text=พี่เอกวิทย์'"/>
-                            </div>
-                            <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-900 h-48">
-                                <img src="image_4.png" alt="มาย มิ้น Deli Safe" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://placehold.co/300x500/31104b/c084fc?text=มาย+มิ้น'"/>
-                            </div>
-                        </div>
-
-                        <h4 class="text-lg font-bold text-white mb-1">Deli Lockworth Minimalist Safe</h4>
-                        <p class="text-xs text-slate-400 mb-2">Creators: <strong>พี่เอกวิทย์ / มาย มิ้น.</strong></p>
-                        <p class="text-xs text-slate-300 leading-relaxed mb-4">Demonstrated fingerprint technology and home decor setup to convert high-ticket shoppers easily.</p>
-                    </div>
-                    <div class="pt-4 border-t border-slate-800/80 grid grid-cols-3 gap-2 text-center">
-                        <div class="bg-slate-900/60 p-2 rounded-xl">
-                            <div class="text-sm font-bold text-white">893</div>
-                            <div class="text-[10px] text-slate-400">Likes</div>
-                        </div>
-                        <div class="bg-slate-900/60 p-2 rounded-xl">
-                            <div class="text-sm font-bold text-white">249</div>
-                            <div class="text-[10px] text-slate-400">Saves</div>
-                        </div>
-                        <div class="bg-slate-900/60 p-2 rounded-xl">
-                            <div class="text-sm font-bold text-white">228</div>
-                            <div class="text-[10px] text-slate-400">Shares</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-<!-- ... existing code -->
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 dark:border-slate-800 py-8 text-center text-xs text-muted-theme">
+    <p>Pharadee Kasemsin • Digital Marketing & TikTok Affiliate Specialist Portfolio</p>
+  </footer>
+</body>
+</html>
